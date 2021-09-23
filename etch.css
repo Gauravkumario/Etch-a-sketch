@@ -1,0 +1,88 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family:'VT323',monospace;
+	user-select: none;
+}
+
+body {
+  animation-name: backgroundColorPalette;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes backgroundColorPalette {
+  0% {
+    background: #ee6055;
+  }
+  25% {
+    background: #60d394;
+  }
+  50% {
+    background: #aaf683;
+  }
+  75% {
+    background: #ffd97d;
+  }
+  100% {
+    background: #ff9b85;
+  }
+}
+
+header{
+	width: 100%;
+	font-size: 36px;
+	text-align: center;
+	padding: 15px;
+	font-weight: bolder;
+}
+#main-container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.btn-d{
+	width: 102px;
+	height: 42px;
+	border-radius: 5px;
+	border: none;
+	margin: 10px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.btn-d:active{
+	box-shadow: 0 5px #666;
+	transform: translate(10px);
+}
+
+#black{
+	background-color: #000000 !important;
+	color: #ffffff;
+}
+/***************************************************************/
+#bookLet{
+	width:600px;
+	height: 600px;
+	margin: auto;
+	background-color: rosybrown;
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+}
+
+@media (max-width: 400px){
+	#bookLet{
+		width: 375px;
+	}
+}
+/******************************************/
+footer{
+	bottom: 0px;
+	right: 0px;
+	padding: 0px 12px 5px 0pxs;
+	position: fixed;
+}
